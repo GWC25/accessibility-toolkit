@@ -1,10 +1,10 @@
-# DigiWest Access Toolkit
+# Accessibility Toolkit
 
 **Self-service accessibility resource for FE/HE learners to discover Microsoft tools that solve their learning barriers**
 
 ## 🎯 Project Overview
 
-The DigiWest Access Toolkit helps learners aged 16-19 and adult ESOL students discover and learn Microsoft accessibility tools that address their specific learning needs. Users browse by challenge (e.g., "Text is too small"), flip cards to see solutions, and track their progress through a Kanban-style system.
+The Accessibility Toolkit helps learners aged 16-19 and adult ESOL students discover and learn Microsoft accessibility tools that address their specific learning needs. Users browse by challenge (e.g., "Text is too small"), flip cards to see solutions, and track their progress through a Kanban-style system.
 
 ---
 
@@ -66,7 +66,7 @@ The DigiWest Access Toolkit helps learners aged 16-19 and adult ESOL students di
 ## 🚀 Getting Started
 
 ### For Users
-1. Visit: `https://YOUR-ORG.github.io/digiwest-access-toolkit/`
+1. Visit: `https://gwc25.github.io/accessibility-toolkit/`
 2. Browse cards in the Tool Finder
 3. Flip cards to see solutions with step-by-step instructions
 4. Save useful cards to My Toolkit
@@ -94,7 +94,7 @@ python3 -m http.server 8000
 ## 📁 Project Structure
 
 ```
-digiwest-access-toolkit/
+accessibility-toolkit/
 ├── index.html              # Dashboard
 ├── finder.html             # Tool Finder (card browser)
 ├── toolkit.html            # My Toolkit (Kanban board)
@@ -181,7 +181,7 @@ We welcome contributions! See `docs/CONTRIBUTING.md` for guidelines.
 
 ## 📞 Contact
 
-- **Project**: DigiWest Access Toolkit
+- **Project**: Accessibility Toolkit
 - **Organization**: DigiWest
 - **Issues**: [GitHub Issues]
 
