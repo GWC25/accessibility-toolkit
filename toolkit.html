@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tool Finder - Accessibility Toolkit</title>
+    <title>My Toolkit - Accessibility Toolkit</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -25,32 +25,66 @@
         <div class="container">
             <ul class="nav-links">
                 <li><a href="AT-index.html" class="nav-link">Dashboard</a></li>
-                <li><a href="AT-finder.html" class="nav-link active">Tool Finder</a></li>
-                <li><a href="AT-toolkit.html" class="nav-link">My Toolkit</a></li>
+                <li><a href="AT-finder.html" class="nav-link">Tool Finder</a></li>
+                <li><a href="AT-toolkit.html" class="nav-link active">My Toolkit</a></li>
                 <li><a href="settings.html" class="nav-link">Settings</a></li>
             </ul>
         </div>
-    </nav>
+    </header>
 
     <main class="main-content">
         <div class="container">
-            <section class="finder-hero">
-                <h2 class="page-title">Tool Finder</h2>
+            <section class="toolkit-hero">
+                <h2 class="page-title">My Toolkit</h2>
                 <p class="page-description">
-                    Browse accessibility tools by your needs. Click any card to see step-by-step solutions with video tutorials.
+                    Track your learning journey. Move tools between stages as you learn and master them.
                 </p>
             </section>
 
-            <section class="category-filter-section">
-                <h3 class="section-title">Filter by Category</h3>
-                <div class="category-filter" id="category-filter">
-                    Loading categories...
+            <section class="kanban-board">
+                <div class="kanban-column exploring-column">
+                    <h3 class="column-title">
+                        <span class="column-icon">🔵</span>
+                        To Explore
+                    </h3>
+                    <p class="column-description">Tools you want to try</p>
+                    <div class="kanban-cards" id="exploring-column">
+                        Loading...
+                    </div>
+                </div>
+
+                <div class="kanban-column developing-column">
+                    <h3 class="column-title">
+                        <span class="column-icon">🟡</span>
+                        Developing
+                    </h3>
+                    <p class="column-description">Tools you're learning</p>
+                    <div class="kanban-cards" id="developing-column">
+                        Loading...
+                    </div>
+                </div>
+
+                <div class="kanban-column mastered-column">
+                    <h3 class="column-title">
+                        <span class="column-icon">🟢</span>
+                        Mastered
+                    </h3>
+                    <p class="column-description">Tools you're confident with</p>
+                    <div class="kanban-cards" id="mastered-column">
+                        Loading...
+                    </div>
                 </div>
             </section>
 
-            <section class="cards-section">
-                <div class="cards-grid" id="cards-container">
-                    Loading tools...
+            <section class="toolkit-help">
+                <div class="help-card">
+                    <h3>How to use My Toolkit</h3>
+                    <ul>
+                        <li><strong>To Explore:</strong> Tools you've saved but haven't tried yet</li>
+                        <li><strong>Developing:</strong> Tools you're actively learning and practicing</li>
+                        <li><strong>Mastered:</strong> Tools you're confident using regularly</li>
+                    </ul>
+                    <p>Use the dropdown on each card to change its status as you progress.</p>
                 </div>
             </section>
         </div>
@@ -64,7 +98,7 @@
 
     <script src="js/AT-data.js"></script>
     <script src="js/storage.js"></script>
-    <script src="js/AT-finder.js"></script>
+    <script src="js/AT-toolkit.js"></script>
     <script src="js/settings.js"></script>
 </body>
 </html>
