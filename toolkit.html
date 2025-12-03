@@ -1,1 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tool Finder - Accessibility Toolkit</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="header-content">
+                <a href="AT-index.html" class="logo-link">
+                    <img src="assets/logo.svg" alt="DigiWest" class="logo">
+                    <h1 class="site-title">Accessibility Toolkit</h1>
+                </a>
+                <button class="accessibility-toggle" id="accessibility-toggle" aria-label="Accessibility settings">
+                    ♿
+                </button>
+            </div>
+        </div>
+    </header>
 
+    <nav class="main-nav">
+        <div class="container">
+            <ul class="nav-links">
+                <li><a href="AT-index.html" class="nav-link">Dashboard</a></li>
+                <li><a href="AT-finder.html" class="nav-link active">Tool Finder</a></li>
+                <li><a href="AT-toolkit.html" class="nav-link">My Toolkit</a></li>
+                <li><a href="settings.html" class="nav-link">Settings</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="container">
+            <section class="finder-hero">
+                <h2 class="page-title">Tool Finder</h2>
+                <p class="page-description">
+                    Browse accessibility tools by your needs. Click any card to see step-by-step solutions with video tutorials.
+                </p>
+            </section>
+
+            <section class="category-filter-section">
+                <h3 class="section-title">Filter by Category</h3>
+                <div class="category-filter" id="category-filter">
+                    Loading categories...
+                </div>
+            </section>
+
+            <section class="cards-section">
+                <div class="cards-grid" id="cards-container">
+                    Loading tools...
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2024 DigiWest Accessibility Toolkit. All data stored locally on your device.</p>
+        </div>
+    </footer>
+
+    <script src="js/AT-data.js"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/AT-finder.js"></script>
+    <script src="js/settings.js"></script>
+</body>
+</html>
