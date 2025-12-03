@@ -76,9 +76,9 @@ function createCardHTML(card, isSaved) {
                     <p class="flip-hint">Click to see solutions →</p>
                 </div>
                 <div class="card-face card-back">
-                    <h3 class="card-title">Solutions</h3>
+                    <h3 class="card-title">Solution</h3>
                     <div class="solutions-container">
-                        ${card.solutions.map(solution => createSolutionHTML(solution)).join('')}
+                        ${createSolutionHTML(card.solution)}
                     </div>
                     <div class="card-actions">
                         <button class="btn-primary save-tool-btn" data-card-id="${card.id}">

@@ -3,6 +3,16 @@
 // Settings page functionality
 // ==================================
 
+// Initialize accessibility toggle on all pages
+document.addEventListener('DOMContentLoaded', () => {
+    const accessibilityToggle = document.getElementById('accessibility-toggle');
+    if (accessibilityToggle) {
+        accessibilityToggle.addEventListener('click', () => {
+            alert('Accessibility settings panel coming soon! For now, visit the Settings page to adjust font size and other options.');
+        });
+    }
+});
+
 // Set font size
 function setFontSize(scale) {
     document.documentElement.style.setProperty('--font-scale', scale);
