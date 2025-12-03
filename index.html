@@ -1,68 +1,82 @@
 <!DOCTYPE html>
-<html lang="en-GB">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Wellness Plan - Dashboard</title>
+    <title>Dashboard - Accessibility Toolkit</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <!-- Header -->
-    <header class="header">
-        <div class="header-content">
-            <div class="logo-area">
-                <img src="assets/logo.svg" alt="Digital Wellness Plan Logo" class="logo">
-                <a href="index.html" class="site-title">Digital Wellness Plan</a>
+    <header class="site-header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo-link">
+                    <img src="assets/logo.png" alt="DigiWest" class="logo">
+                    <h1 class="site-title">Accessibility Toolkit</h1>
+                </a>
+                <button class="accessibility-toggle" id="accessibility-toggle" aria-label="Accessibility settings">
+                    ♿
+                </button>
             </div>
         </div>
     </header>
 
-    <!-- Navigation -->
-    <nav class="nav">
-        <ul class="nav-list">
-            <li><a href="index.html" class="nav-link active">Dashboard</a></li>
-            <li><a href="surgery.html" class="nav-link">Wellbeing Surgery</a></li>
-            <li><a href="favourites.html" class="nav-link">Favourites</a></li>
-            <li><a href="settings.html" class="nav-link">Settings</a></li>
-        </ul>
+    <nav class="main-nav">
+        <div class="container">
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link active">Dashboard</a></li>
+                <li><a href="AT-finder.html" class="nav-link">Tool Finder</a></li>
+                <li><a href="AT-toolkit.html" class="nav-link">My Toolkit</a></li>
+                <li><a href="AT-settings.html" class="nav-link">Settings</a></li>
+            </ul>
+        </div>
     </nav>
 
-    <!-- Main Content -->
-    <main class="main">
-        <h1>Welcome to Your Dashboard</h1>
-        
-        <!-- Current Date -->
-        <div class="date-display" id="current-date">Loading date...</div>
+    <main class="main-content">
+        <div class="container">
+            <section class="dashboard-hero">
+                <h2 class="page-title">Welcome to Your Dashboard</h2>
+                <p class="current-date" id="current-date">Loading date...</p>
+            </section>
 
-        <!-- Motivational Message -->
-        <div class="motivational-card">
-            <p class="motivational-message" id="motivational-message">Loading your daily message...</p>
-        </div>
+            <section class="motivational-section">
+                <div class="motivational-card">
+                    <p class="motivational-message" id="motivational-message">
+                        Loading message...
+                    </p>
+                </div>
+            </section>
 
-        <!-- Goals Section -->
-        <div class="goals-header">
-            <h2>Your Goals</h2>
-            <span class="goal-limit" id="goal-limit">0/3 goals</span>
-        </div>
+            <section class="toolkit-summary-section">
+                <h3 class="section-title">Your Learning Progress</h3>
+                <div id="toolkit-summary">
+                    Loading your toolkit...
+                </div>
+            </section>
 
-        <div class="goals-grid" id="goals-container">
-            <!-- Goals will be loaded here by JavaScript -->
-            <div class="empty-state">
-                <div class="empty-state-icon">🎯</div>
-                <p class="empty-state-message">Loading your goals...</p>
-            </div>
+            <section class="quick-actions">
+                <h3 class="section-title">Quick Actions</h3>
+                <div class="action-buttons">
+                    <a href="AT-finder.html" class="btn-primary btn-large">
+                        🔍 Browse Tool Finder
+                    </a>
+                    <a href="AT-toolkit.html" class="btn-secondary btn-large">
+                        📊 View My Toolkit
+                    </a>
+                </div>
+            </section>
         </div>
     </main>
 
-    <!-- Scripts -->
-    <script src="js/cards/reading-cards.js"></script>
-    <script src="js/cards/writing-cards.js"></script>
-    <script src="js/cards/focus-cards.js"></script>
-    <script src="js/cards/vision-cards.js"></script>
-    <script src="js/cards/hearing-cards.js"></script>
-    <script src="js/cards/motor-cards.js"></script>
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2024 DigiWest Accessibility Toolkit. All data stored locally on your device.</p>
+        </div>
+    </footer>
+
     <script src="js/AT-data.js"></script>
     <script src="js/storage.js"></script>
     <script src="js/AT-main.js"></script>
+    <script src="js/settings.js"></script>
 </body>
 </html>
