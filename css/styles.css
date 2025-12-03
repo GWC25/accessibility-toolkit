@@ -781,6 +781,111 @@ a:hover {
 }
 
 /* ============================================
+   SETTINGS PAGE
+   ============================================ */
+.settings-section {
+    margin-bottom: var(--spacing-xl);
+    background: var(--color-surface-elevated);
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-lg);
+    border: 2px solid var(--color-border);
+}
+
+.section-description {
+    color: var(--color-text-secondary);
+    margin-bottom: var(--spacing-md);
+}
+
+.setting-group {
+    margin-bottom: var(--spacing-lg);
+    padding-bottom: var(--spacing-lg);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.setting-group:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.setting-label {
+    display: block;
+    margin-bottom: var(--spacing-sm);
+}
+
+.setting-label strong {
+    display: block;
+    font-size: 1.125rem;
+    margin-bottom: var(--spacing-xs);
+}
+
+.setting-description {
+    display: block;
+    font-size: 0.875rem;
+    color: var(--color-text-secondary);
+}
+
+.setting-control {
+    margin-top: var(--spacing-sm);
+}
+
+.setting-select {
+    width: 100%;
+    max-width: 300px;
+    padding: var(--spacing-sm) var(--spacing-md);
+    background: var(--color-bg);
+    border: 2px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    color: var(--color-text);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+.setting-select:hover,
+.setting-select:focus {
+    border-color: var(--color-cyan);
+}
+
+.data-actions {
+    display: flex;
+    gap: var(--spacing-md);
+    flex-wrap: wrap;
+}
+
+.btn-secondary.warning {
+    border-color: #ef4444;
+    color: #ef4444;
+}
+
+.btn-secondary.warning:hover {
+    background: #ef4444;
+    color: white;
+}
+
+.privacy-info,
+.about-info {
+    background: var(--color-surface);
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-md);
+}
+
+.privacy-list {
+    margin-left: var(--spacing-lg);
+    margin-top: var(--spacing-md);
+}
+
+.privacy-list li {
+    margin-bottom: var(--spacing-sm);
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+}
+
+.about-info p {
+    margin-bottom: var(--spacing-sm);
+}
+
+/* ============================================
    ACCESSIBILITY
    ============================================ */
 :focus-visible {
@@ -794,4 +899,23 @@ a:hover {
         animation-iteration-count: 1 !important;
         transition-duration: 0.01ms !important;
     }
+}
+
+/* High Contrast Mode */
+.high-contrast {
+    --color-border: #666666;
+    --color-surface: #1a1a1a;
+    --color-surface-elevated: #2a2a2a;
+}
+
+/* No Animations */
+.no-animations * {
+    animation: none !important;
+    transition: none !important;
+}
+
+/* Reduced Motion */
+.reduced-motion * {
+    animation-duration: 0.1s !important;
+    transition-duration: 0.1s !important;
 }

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings - Accessibility Toolkit</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo-link">
+                    <img src="assets/logo.png" alt="DigiWest" class="logo">
+                    <h1 class="site-title">Accessibility Toolkit</h1>
+                </a>
+                <button class="accessibility-toggle" id="accessibility-toggle" aria-label="Accessibility settings">
+                    ♿
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <div class="container">
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Dashboard</a></li>
+                <li><a href="AT-finder.html" class="nav-link">Tool Finder</a></li>
+                <li><a href="AT-toolkit.html" class="nav-link">My Toolkit</a></li>
+                <li><a href="AT-settings.html" class="nav-link active">Settings</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="container">
+            <section class="settings-hero">
+                <h2 class="page-title">Settings</h2>
+                <p class="page-description">
+                    Customize your experience and manage your data. All settings are saved locally on your device.
+                </p>
+            </section>
+
+            <section class="settings-section">
+                <h3 class="section-title">Appearance</h3>
+                
+                <div class="setting-group">
+                    <label for="font-size" class="setting-label">
+                        <strong>Text Size</strong>
+                        <span class="setting-description">Adjust text size for better readability</span>
+                    </label>
+                    <div class="setting-control">
+                        <select id="font-size" class="setting-select">
+                            <option value="small">Small</option>
+                            <option value="medium" selected>Medium (Recommended)</option>
+                            <option value="large">Large</option>
+                            <option value="x-large">Extra Large</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="setting-group">
+                    <label for="contrast-mode" class="setting-label">
+                        <strong>Contrast</strong>
+                        <span class="setting-description">Increase contrast for better visibility</span>
+                    </label>
+                    <div class="setting-control">
+                        <select id="contrast-mode" class="setting-select">
+                            <option value="normal" selected>Normal</option>
+                            <option value="high">High Contrast</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="setting-group">
+                    <label for="animations" class="setting-label">
+                        <strong>Animations</strong>
+                        <span class="setting-description">Control motion and animations</span>
+                    </label>
+                    <div class="setting-control">
+                        <select id="animations" class="setting-select">
+                            <option value="full" selected>Full Animations</option>
+                            <option value="reduced">Reduced Motion</option>
+                            <option value="none">No Animations</option>
+                        </select>
+                    </div>
+                </div>
+            </section>
+
+            <section class="settings-section">
+                <h3 class="section-title">Data Management</h3>
+                <p class="section-description">
+                    All your data is stored locally on this device. You have full control.
+                </p>
+
+                <div class="data-actions">
+                    <button class="btn-secondary" id="clear-toolkit-btn">
+                        Clear My Toolkit
+                    </button>
+                    <button class="btn-secondary" id="export-data-btn">
+                        Export My Data
+                    </button>
+                    <button class="btn-secondary warning" id="clear-all-btn">
+                        Clear All Data
+                    </button>
+                </div>
+            </section>
+
+            <section class="settings-section">
+                <h3 class="section-title">Privacy & Your Data</h3>
+                <div class="privacy-info">
+                    <p><strong>Your privacy matters.</strong> Here's what you need to know:</p>
+                    <ul class="privacy-list">
+                        <li><strong>What data is stored:</strong> Your saved tools, progress status, and settings preferences.</li>
+                        <li><strong>Where it's stored:</strong> Locally in your browser's storage on this device only.</li>
+                        <li><strong>Who can access it:</strong> Only you, on this device. No one else can see your data.</li>
+                        <li><strong>No tracking:</strong> We don't collect, transmit, or store any of your personal information on servers.</li>
+                        <li><strong>Your control:</strong> You can export or delete your data at any time using the buttons above.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="settings-section">
+                <h3 class="section-title">About</h3>
+                <div class="about-info">
+                    <p><strong>Accessibility Toolkit</strong></p>
+                    <p>Version 1.0.0</p>
+                    <p>Designed for FE/HE learners aged 16-19 and adult ESOL students.</p>
+                    <p>Created by DigiWest to help learners discover Microsoft accessibility tools.</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2024 DigiWest Accessibility Toolkit. All data stored locally on your device.</p>
+        </div>
+    </footer>
+
+    <script src="js/storage.js"></script>
+    <script src="js/AT-settings.js"></script>
+</body>
+</html>
