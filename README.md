@@ -199,3 +199,5 @@ We welcome contributions! See `docs/CONTRIBUTING.md` for guidelines.
 **Built with care for learners who deserve tools that work for them** 💙
 
 *Version: 1.0.0-MVP | Last Updated: December 2025*
+
+Test: Update README on feature branch
