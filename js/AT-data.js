@@ -50,12 +50,12 @@ const CATEGORIES = [
 // COMBINE ALL CARDS
 // Phase 1: Reading (10), Writing (10), Focus (8) = 28 cards
 // Phase 2: Vision (8), Hearing (8), Motor (6) = 22 cards
+// TOTAL: 50 cards
 const ACCESSIBILITY_CARDS = [
     ...READING_CARDS,
     ...WRITING_CARDS,
-    ...FOCUS_CARDS
-    // Add more in Phase 2:
-    // ...VISION_CARDS,
-    // ...HEARING_CARDS,
-    // ...MOTOR_CARDS
+    ...FOCUS_CARDS,
+    ...VISION_CARDS,
+    ...HEARING_CARDS,
+    ...MOTOR_CARDS
 ];
